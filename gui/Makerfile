@@ -1,0 +1,8 @@
+CXX = g++
+CXXFLAGS = -m32 -ffreestanding -nostdlib
+
+gui.o: boot_screen.cpp account_screen.cpp home_screen.cpp
+    $(CXX) $(CXXFLAGS) -c boot_screen.cpp account_screen.cpp home_screen.cpp
+
+clean:
+    rm -f gui.o

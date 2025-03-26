@@ -1,0 +1,2 @@
+ctrl+shift+b
+ld -m i386pe app.o -o app.exe -lmsvcrt

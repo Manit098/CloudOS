@@ -1,0 +1,8 @@
+AS = nasm
+LD = ld
+
+boot.bin: boot.S
+    $(AS) -f bin boot.S -o boot.bin
+
+clean:
+    rm -f boot.bin
